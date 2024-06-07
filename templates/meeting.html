@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hand Gesture Controlled Presentation</title>
+</head>
+<body>
+    <h1>Hand Gesture Controlled Presentation</h1>
+    <img src="{{ url_for('video_feed') }}" id="video">
+    <button onclick="stopVideo()">Cut</button>
+
+    <script>
+        function stopVideo() {
+            fetch('/stop_video')
+            .then(response => {
+                if (response.ok) {
+                    document.getElementById('video').src = "";
+                }
+            })
+            .catch(error => console.log('Error:', error));
+        }
+    </script>
+</body>
+</html>
