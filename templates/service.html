@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Website</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 1200px; /* Adjust the maximum width as needed */
+      margin: 0 auto;
+      padding: 0 20px; /* Add some padding to keep content away from edges */
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background-color: #f8f8f8;
+      border-bottom: 1px solid #e7e7e7;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo-icon {
+      width: 0;
+      height: 0;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-bottom: 15px solid teal;
+      margin-right: 10px;
+    }
+
+    .logo-title {
+      font-size: 24px;
+      font-weight: bold;
+      font-family: 'Bauhaus 93', sans-serif;
+      color: teal;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+
+    .nav-item.active a {
+      color: teal;
+    }
+
+    .main-title {
+      text-align: center;
+      font-size: 50px; /* Adjust the font size as needed */
+      font-weight: bold;
+      margin: 50px 0;
+      color: #FF6F61;
+    }
+
+    /* Animated Box */
+    .animated-box {
+      width: 100%; /* Make the box take the full width of the container */
+      padding: 20px;
+      background-color: #FFF;
+      border-radius: 10px;
+      box-shadow: 0 0 5px #FF6F61, 0 0 10px #FF6F61;
+      animation: glow 1s ease-in-out infinite alternate;
+    }
+
+    @keyframes glow {
+      0% {
+        box-shadow: 0 0 5px #FF6F61, 0 0 10px #FF6F61;
+      }
+      100% {
+        box-shadow: 0 0 15px #FF6F61, 0 0 20px #FF6F61;
+      }
+    }
+
+    /* Text color inside animated box */
+    .animated-box p {
+      color: teal;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">
+        <div class="logo-icon"></div>
+        <div class="logo-title">DOODLE</div>
+      </div>
+      <nav>
+        <ul>
+          <li class="nav-item"><a href="index.html">Home</a></li>
+          <li class="nav-item"><a href="simulation.html">Simulation</a></li>
+          <li class="nav-item active"><a href="service.html">Service</a></li>
+          <li class="nav-item"><a href="login.html">Sign In</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    <div class="main-title">FEATURES</div>
+
+    <!-- Animated Box with Paragraphs -->
+    <div class="animated-box">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac ultricies ipsum. Nullam fermentum, nunc ac feugiat suscipit, dui lorem dapibus mi, ut varius leo justo nec purus.</p>
+      <p>Integer auctor augue nec metus faucibus, ac laoreet velit fringilla. Nullam suscipit, libero eget commodo eleifend, ligula tortor vulputate libero, id pretium dolor urna nec enim.</p>
+    </div>
+    <div class="animated-box">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac ultricies ipsum. Nullam fermentum, nunc ac feugiat suscipit, dui lorem dapibus mi, ut varius leo justo nec purus.</p>
+      <p>Integer auctor augue nec metus faucibus, ac laoreet velit fringilla. Nullam suscipit, libero eget commodo eleifend, ligula tortor vulputate libero, id pretium dolor urna nec enim.</p>
+    </div>
+    <div class="animated-box">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac ultricies ipsum. Nullam fermentum, nunc ac feugiat suscipit, dui lorem dapibus mi, ut varius leo justo nec purus.</p>
+      <p>Integer auctor augue nec metus faucibus, ac laoreet velit fringilla. Nullam suscipit, libero eget commodo eleifend, ligula tortor vulputate libero, id pretium dolor urna nec enim.</p>
+    </div>
+    <div class="animated-box">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac ultricies ipsum. Nullam fermentum, nunc ac feugiat suscipit, dui lorem dapibus mi, ut varius leo justo nec purus.</p>
+      <p>Integer auctor augue nec metus faucibus, ac laoreet velit fringilla. Nullam suscipit, libero eget commodo eleifend, ligula tortor vulputate libero, id pretium dolor urna nec enim.</p>
+    </div>
+  </div>
+</body>
+</html>
