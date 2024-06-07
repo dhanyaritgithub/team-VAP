@@ -89,7 +89,7 @@ def gen():
     pTime = 0
     cap = cv2.VideoCapture(0)
     detector = handDetector()
-    pptx_file = r'presentation\Presentation1.pptx'  # Use the absolute path to the file
+    pptx_file = r'presentations\Presentation1.pptx'  # Use the absolute path to the file
 
     if not os.path.exists(pptx_file):
         raise FileNotFoundError(f"{pptx_file} does not exist.")
@@ -226,9 +226,9 @@ def gen():
         yield (b'--frame\r\n'
                b'Content-Type: image/jpeg\r\n\r\n' + frame + b'\r\n\r\n')
 
-# @app.route('/video_feed')
-# def video_feed():
-#     return Response(gen(), mimetype='multipart/x-mixed-replace; boundary=frame')
+@app.route('/video_feed')
+def video_feed():
+    return Response(gen(), mimetype='multipart/x-mixed-replace; boundary=frame')
 
 
 @app.route('/')
