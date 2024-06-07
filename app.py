@@ -231,17 +231,22 @@ def gen():
 #     return Response(gen(), mimetype='multipart/x-mixed-replace; boundary=frame')
 
 
+@app.route('/')
+def firstpage():
+    return render_template('home.html')
+
+@app.route('/home')
+def home():
+    return render_template('home.html')
+
+@app.route('/simulation')
+def simulation():
+    return render_template('simulation.html')
 
 
-
-
-
-
-
-
-
-
-
+@app.route('/service')
+def service():
+    return render_template('service.html')
 
 
 @app.route('/stop_video')
